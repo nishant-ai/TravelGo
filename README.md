@@ -21,7 +21,6 @@ This Repository Accepts Hacktoberfest Pull Requests!
 Let's connect and create wonderful projects!
 
 ![Smiling Leo Perfect GIF](https://user-images.githubusercontent.com/80044482/194141930-a7ae37b4-92fa-49a9-ae84-e76e22856b4c.gif)
-![cIe5MvDvX4Vc](https://user-images.githubusercontent.com/80044482/194142038-22476ba8-d18e-4462-8c98-358c4b10fa4c.gif)
 
 ## Want to Contribute?
 
