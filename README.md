@@ -21,6 +21,7 @@ This Repository Accepts Hacktoberfest Pull Requests!
 Let's connect and create wonderful projects!
 
 ![github](https://media0.giphy.com/avatars/mwooodward/cIe5MvDvX4Vc.gif)
+
 ![opensource](https://www.hubspot.com/hubfs/Smiling%20Leo%20Perfect%20GIF.gif)
 
 ## Want to Contribute?
