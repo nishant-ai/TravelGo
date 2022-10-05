@@ -13,7 +13,7 @@ It is a Travel-Agent Website created with an inspirational design over Figma.
 
 ## 🎃 Hacktoberfest 🎃
 
-[github](https://media0.giphy.com/avatars/mwooodward/cIe5MvDvX4Vc.gif)
+![github](https://media0.giphy.com/avatars/mwooodward/cIe5MvDvX4Vc.gif)
 
     if (programmer.level >= Beginner) {
         contribution();
