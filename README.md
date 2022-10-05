@@ -20,7 +20,7 @@ It is a Travel-Agent Website created with an inspirational design over Figma.
 This Repository Accepts Hacktoberfest Pull Requests!
 Let's connect and create wonderful projects!
 
-![gatsby 1497548146](https://user-images.githubusercontent.com/80044482/194141759-32a3e67a-e22a-4d0a-8c69-f595a497eb68.gif)
+![Smiling Leo Perfect GIF](https://user-images.githubusercontent.com/80044482/194141930-a7ae37b4-92fa-49a9-ae84-e76e22856b4c.gif)
 
 
 ## Want to Contribute?
