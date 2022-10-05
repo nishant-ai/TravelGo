@@ -45,3 +45,5 @@ Let's connect and create wonderful projects!
 #### Happy Hacking!
 
 #### #Hacktoberfest-Accepted ✨
+
+![meme](https://d2kspx2x29brck.cloudfront.net/1200x675/filters:format(webp)/img/iea/yrwQvLJbON/programmer-memes.jpg)
