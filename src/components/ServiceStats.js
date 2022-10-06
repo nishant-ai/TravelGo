@@ -4,7 +4,7 @@ import StatsCard from './StatsCard'
 
 function ServiceStats() {
   return (
-    <Container>
+    <Container id="aboutUs">
         <CoverTitleu>We always try to give you</CoverTitleu>
         <CoverTitle>the best service</CoverTitle>
         <CoverTextu>We always try to make our customer Happy. We provide all kind of</CoverTextu>

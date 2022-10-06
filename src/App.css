@@ -6,8 +6,12 @@ ul{
     list-style: none;
 }
 
-a {
+a{
     text-decoration: none;
     color: white;
+}
+
+a:hover{
     cursor: pointer;
+
 }

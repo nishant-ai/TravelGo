@@ -3,13 +3,15 @@ import styled from 'styled-components'
 import footerLogo from '../assets/footer-logo.svg'
 import appStore from '../assets/appstore.svg'
 import playStore from '../assets/playstore.svg'
+import {Link} from "react-scroll"
 
 function Footer() {
   return (
     <Container>
 
         <Left>
-          <Logo src={footerLogo} alt='' />
+        <Link to="home" smooth={true} duration={500} spy={true} exact="true">
+          <Logo src={footerLogo} alt='' /></Link>
           <LeftText>Book your trip in minute, get full Control for much longer</LeftText>
         </Left>
 

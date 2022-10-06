@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from "react-scroll"
 
 function Navbar() {
   return (
@@ -8,9 +9,9 @@ function Navbar() {
         <Logo src={require('../assets/TravelGo.png')} />
       </Left>
       <Center>
-        <a href='/'>Home</a>
-        <a href='/'>About Us</a>
-        <a href='/'>Packages</a>
+        <a><Link to="home" smooth={true} duration={500} spy={true} exact="true">Home</Link></a>
+        <a><Link to="aboutUs" smooth={true} duration={500} spy={true} exact="true">About Us</Link></a>
+        <a href='/'><Link to="packages" smooth={true} duration={500} spy={true} exact="true">Packages</Link></a>
       </Center>
       <Right>
         <Favourite src={require('../assets/favourite.png')} alt='Favourites' />
@@ -28,6 +29,7 @@ const Nav = styled.div`
   justify-content: space-around;
   width: 100%;
   height: 10vh;
+  z-index:12;
 `
 
 const Left = styled.div`

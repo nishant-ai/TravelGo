@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 function Cover() {
   return (
-    <Container>
+    <Container id="home">
       <CoverImg src={require('../assets/cover.png')} alt="cover" />
       <CoverBody>
         <CoverTitle>Your Imagination Is</CoverTitle>
