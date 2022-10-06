@@ -24,6 +24,8 @@ Let's connect and create wonderful projects!
 
 ![gatsby 1497548146](https://user-images.githubusercontent.com/80044482/194142232-f1a68662-917d-438b-84c0-2b246907fbbd.gif)
 
+## Screenshot
+![ScreenshotSite](https://github.com/OjashKush/TravelGo/blob/img/Screenshot.png)
 
 ## Want to Contribute?
 
