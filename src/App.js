@@ -4,7 +4,7 @@ import BookingSteps from './components/BookingSteps';
 
 import Cover from './components/Cover';
 import Destinations from './components/Destinations';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Packages from './components/Packages';
 import Reviews from './components/Reviews';
 import Service from './components/Service';
