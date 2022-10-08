@@ -11,6 +11,7 @@ function Footer() {
         <Left>
           <Logo src={footerLogo} alt='' />
           <LeftText>Book your trip in minute, get full Control for much longer</LeftText>
+          <Login href='/signin'>Login</Login>
         </Left>
 
         <Mid>
@@ -121,4 +122,12 @@ const RightLogo = styled.img`
 
 const Logos = styled.div`
   display: flex;
+`
+const Login = styled.a`
+  background-color: #00A651;
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-size: 2.5vh;
+  font-weight: 500;
+  color: white;
 `
