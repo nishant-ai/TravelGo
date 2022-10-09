@@ -13,7 +13,7 @@ const cards = [
         title: "Hotel Booking",
         text: "You can easily book your according to your budget hotel by our website.",
         image: "hotel.png",
-        active: true
+        active: false
     },
     {
         title: "Tour Plan",
@@ -26,7 +26,7 @@ const cards = [
 function Service() {
   return (
     <Container>
-        <ServiceTitle>Our Service</ServiceTitle>
+        <ServiceTitle>Our Services</ServiceTitle>
         <ServiceCardContainer>
             {
                 cards.map((card) => (

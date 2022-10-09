@@ -28,6 +28,10 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     font-size: 14px;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 30px 45px -15px rgba(0,0,0,0.7);
+    }
 `
 
 const Background = styled.img`
