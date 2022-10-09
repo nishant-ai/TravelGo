@@ -1,13 +1,13 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
