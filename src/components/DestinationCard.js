@@ -28,6 +28,10 @@ const Container = styled.div`
     box-shadow: 10px 10px 51px -25px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 51px -25px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 51px -25px rgba(0,0,0,0.75);
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 30px 45px -15px rgba(255,255,255,0.57);
+    }
 `
 
 const Image = styled.img`

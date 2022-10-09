@@ -47,6 +47,10 @@ const ContainerInactive = styled.div`
   justify-content: center;
   padding: 0 2vw;
   background: #F9F9F9;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 30px 45px -15px rgba(255,255,255,0.57);
+  }
 `
 
 const Image = styled.img`
