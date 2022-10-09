@@ -35,7 +35,7 @@ const Navigation = () => {
               <a href='#about-us'>About Us</a>
            </List>
            <List>
-              <a href='#package'>Package</a>
+              <a href='#packages'>Package</a>
           </List>
         </Nav>
      );
