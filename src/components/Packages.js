@@ -5,7 +5,7 @@ import PackageSelect from './PackageSelect'
 
 function Packages() {
   return (
-    <Container>
+    <Container id='packages'>
 
         <Title>Best Packages For You</Title>
         <Package>
