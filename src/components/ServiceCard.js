@@ -44,7 +44,7 @@ const ContainerInactive = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 0 2vw;
-  background: #333333;
+  background: #f0f0f0;
   transition: all 0.2s ease-in-out;
   box-shadow: 6px -6px 20px rgba(88, 88, 88, 0.16),
     -6px 6px 20px rgba(88, 88, 88, 0.16), -6px -6px 20px rgba(88, 88, 88, 0.16),
@@ -73,5 +73,5 @@ const Title = styled.div`
 const Text = styled.div`
   margin-top: 1vh;
   font-size: 14px;
-  //   color: #000000;
+  line-height: 18px;
 `;

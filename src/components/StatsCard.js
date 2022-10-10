@@ -14,6 +14,7 @@ function StatsCard(props) {
 export default StatsCard;
 
 const Container = styled.div`
+  border: 0.5px solid #647696;
   width: 30vh;
   height: 30vh;
   background: #333333;

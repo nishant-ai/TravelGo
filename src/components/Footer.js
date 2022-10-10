@@ -10,7 +10,7 @@ function Footer() {
 
         <Left>
           <Logo src={footerLogo} alt='' />
-          <LeftText>Book your trip in minute, get full Control for much longer</LeftText>
+          <LeftText>Book your trip in minute, get full Control for much longer.</LeftText>
         </Left>
 
         <Mid>
@@ -89,6 +89,7 @@ const Logo = styled.img`
 const LeftText = styled.p`
   margin-top: 6vh;
   width: 20vw;
+  color: #647696;
 `
 
 const RightText = styled.p`
@@ -106,12 +107,15 @@ const List = styled.ul`
 const ListTitle = styled.li`
   font-weight: 700;
   margin-bottom: 6vh;
+  color: #f0f0f0;
+  font-size: 18px;
 `
 
 const ListItem = styled.li`
   margin-bottom: 3vh;
   color: #5E6282;
   font-weight: 400;
+  color: #c0ded9;
 `
 
 const RightLogo = styled.img`

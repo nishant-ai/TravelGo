@@ -54,9 +54,12 @@ const CoverTitle = styled.div`
   font-weight: 800;
   font-size: 7vh;
   text-align: center;
+  line-height: 65px;
 `
 const CoverText = styled.div`
   color: white;
+  font-weight: 600;
+  line-height: 35px;
 `
 
 const CoverTextu = styled.div` // cover text upper
