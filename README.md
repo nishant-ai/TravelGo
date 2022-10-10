@@ -24,6 +24,28 @@ It is a Travel-Agent Website created with an inspirational design over Figma.
         contribution();
     }
 
+
+## Quick Start:
+Use your favorite package manager to install the project's dependencies:
+
+```bash
+npm: npm install
+
+yarn: yarn
+
+pnpm: pnpm install
+```
+Run the project:
+
+```bash
+npm: npm run start
+
+yarn: yarn start
+
+pnpm: pnpm start
+```
+
+
 This Repository Accepts Hacktoberfest Pull Requests!
 Let's connect and create wonderful projects!
 

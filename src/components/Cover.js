@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 function Cover() {
   return (
-    <Container>
+    <Container id='home'>
       <CoverImg src={require('../assets/cover.png')} alt="cover" />
       <CoverBody>
         <CoverTitle>Your Imagination Is</CoverTitle>
@@ -65,6 +65,7 @@ const CoverTextu = styled.div` // cover text upper
 `
 
 const CoverButton = styled.a`
+
 cursor:pointer;
 clear:both; 
 border-radius: 3px;
@@ -80,3 +81,4 @@ display:inline-block;
        { box-shadow:-300px 0 0 0 rgb(120,178,167) inset;
       }
 `
+

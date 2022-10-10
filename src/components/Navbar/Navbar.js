@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Navigation from './Navigations'
 import {AiOutlineStar}  from 'react-icons/ai'
@@ -8,12 +8,25 @@ import MobileNavigation from './MobileNavigation'
 
 function Navbar() {
   const [openNav, setOpenNav] = useState(false)
+  const [scrollPosition, setScrollPosition] = useState(0);
+const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+};
+
+useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
 
   const clickHandler =()=>{
     setOpenNav(!openNav)
   }
   return (
-    <Nav>
+    scrollPosition<400 ? <Nav>
       <Left>
        
         <Logo src={require('../../assets/TravelGo.png')} />
@@ -34,7 +47,28 @@ function Navbar() {
         }
         
         </MenuIconCon>
-    </Nav>
+    </Nav> : <FixedNav>
+    <Left>
+       
+       <Logo src={require('../../assets/TravelGo.png')} />
+     </Left>
+     <Navigation/>
+     {openNav  &&
+       <MobileNavigation/>
+    }
+     <Right>
+       <FavIcon  size="42" />
+       <Profile src={require('../../assets/Profile.png')} alt='Profile' />
+     </Right>
+       <MenuIconCon>
+         {openNav  ?       
+         <CrossIcon  onClick={clickHandler}  size="29"/>
+       : 
+         <MenuIcon   onClick={clickHandler} size="37"/>
+       }
+       
+       </MenuIconCon>
+    </FixedNav>
   )
 }
 
@@ -54,6 +88,21 @@ const Nav = styled.div`
     padding:0 1rem;
    
   }
+`
+const FixedNav = styled.div`
+padding:0 5rem;
+position: fixed;
+z-index: 1;
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 100%;
+height: 5rem;
+backdrop-filter: blur(5px);
+@media (max-width:600px) {
+  padding:0 1rem;
+ 
+}
 `
 
 const MenuIconCon = styled.div`
