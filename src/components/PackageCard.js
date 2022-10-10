@@ -23,28 +23,49 @@ function PackageCard({image, stay, cost, tagline, location}) {
 export default PackageCard
 
 const Container = styled.div`
-    margin: 0 2vw;
+    width: 89vw;
+    margin: 1vw 5vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: flex-end;
     font-size: 14px;
+    border-radius: 9px;
+    background-color: white;
     &:hover {
         transform: scale(1.05);
         box-shadow: 0 30px 45px -15px rgba(0,0,0,0.7);
+    }
+    @media (min-width: 768px) {
+        width: auto;
+        flex-direction: column;
+        width: fit-content;
     }
 `
 
 const Background = styled.img`
     width: 25vw;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 9px 0 0 9px;
+    @media (min-width: 768px) {
+        object-fit: contain;
+        border-radius: 0;
+        border-radius: 0 0 9px 9px;
+    }
 `
 
 const Lower = styled.div`
-    position: absolute;
-    width: 25vw;
-    background-color: white;
-    border-radius: 0 0 9px 9px;
-    padding: 20px 15px;
+    border-radius: 0 9px 9px 0;
+    padding: 25px 15px;
+    position: relative;
+    left: -5px;
+    @media (min-width: 768px) {
+        width: 25vw;
+        position: absolute;
+        border-radius: 0 0 9px 9px;
+        padding: 20px 15px;
+        left: auto;
+        background-color: white;
+    }
 `
 
 const Top = styled.div`

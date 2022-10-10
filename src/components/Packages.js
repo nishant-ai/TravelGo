@@ -48,7 +48,7 @@ function Packages() {
 export default Packages
 
 const Container = styled.div`
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -56,6 +56,9 @@ const Container = styled.div`
     align-items: center;
     background: #ECF1F0;
     margin-top: 5vh;
+    @media (min-width: 768px) {
+        height: 100vh;
+    }
 `
 
 const Title = styled.div`
@@ -63,20 +66,26 @@ const Title = styled.div`
     font-size: 4vh;
     width: 100%;
     text-align: center;
+    margin-top: 1vh;
 `
 
 const Package = styled.div`
     width: 100vw;
+    max-width: 1024px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 7vw;
+    padding: 1vw 7vw;
 `
 
 const PackageCards = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    @media (min-width: 768px) {
+        flex-direction: row
+    }
 `
 
 const Discover = styled.a`
