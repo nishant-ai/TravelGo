@@ -29,7 +29,7 @@ const Navigation = () => {
     return ( 
         <Nav>
             <List >
-                 <a  href='#'>Home</a>
+                 <a  href='#home'>Home</a>
             </List>
            <List >
               <a href='#about-us'>About Us</a>
