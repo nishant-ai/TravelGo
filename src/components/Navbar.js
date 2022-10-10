@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { menuItems } from '../components/menuItems'
+import '../components/App.css'
+import MenuItems from '../components/Submenu'
 
 function Navbar() {
   return (
@@ -8,9 +11,10 @@ function Navbar() {
         <Logo src={require('../assets/TravelGo.png')} />
       </Left>
       <Center>
-        <a href='/'>Home</a>
-        <a href='/'>About Us</a>
-        <a href='/'>Packages</a>
+          {menuItems.map((menu, index) => {
+            const depthLevel = 0 ;
+            return  <MenuItems items={menu} key={index} depthLevel={depthLevel} />
+          })}
       </Center>
       <Right>
         <Favourite src={require('../assets/favourite.png')} alt='Favourites' />
@@ -68,3 +72,16 @@ const Profile = styled.img`
   height: 50%;
   cursor: pointer;
 `
+
+// const ListItems = styled.li`
+//   position: relative;
+//   list-style: none;
+// `
+
+// const Button = styled.button`
+//   background-color: inherit;
+//   border: none;
+//   font-size: 16px;
+//   font-weight: 540;
+//   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+// `
