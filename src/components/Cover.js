@@ -68,12 +68,20 @@ const CoverTextu = styled.div` // cover text upper
 `
 
 const CoverButton = styled.a`
-  margin-top: 4vh;
-  background-color: #00A651;
-  padding: 15px 20px;
-  border-radius: 10px;
-  font-size: 2.5vh;
-  font-weight: 500;
-  color: white;
-  cursor: pointer;
+
+cursor:pointer;
+clear:both; 
+border-radius: 3px;
+padding:20px 60px; 
+margin-top:4vh;
+display:inline-block;
+    color:white;
+    transition:all 0.8s, color 0.3s 0.3s;
+     cursor:pointer;
+      background:#04A551;
+       color:white;
+       :hover
+       { box-shadow:-300px 0 0 0 rgb(120,178,167) inset;
+      }
 `
+
