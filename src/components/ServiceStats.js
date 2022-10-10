@@ -37,29 +37,32 @@ const Background = styled.img`
 `
 const CoverTitleu = styled.div` // cover title upper text
   margin-top: 10vh;
-  color: black;
+  color: #f0f0f0;
   font-weight: 600;
   font-size: 6vh;
   text-align: center;
+
 `
 
 const CoverTitle = styled.div`
-  color: black;
+  color: #f0f0f0;
   font-weight: 600;
   font-size: 6vh;
   text-align: center;
 `
 const CoverText = styled.div`
   font-size: 14px;
-  color: black;
+  color: #eee;
   text-align: center;
+  line-height: 22px;
 `
 
 const CoverTextu = styled.div` // cover text upper
   font-size: 14px; 
-  color: black;
+  color: #eee;
   padding-top: 5vh;
   text-align: center;
+  line-height: 22px;
 `
 
 const StatsCards = styled.div`
@@ -67,4 +70,5 @@ const StatsCards = styled.div`
   flex: 1;
   justify-content: space-evenly;
   align-items: center;
+  color:#f0f0f0;
 `

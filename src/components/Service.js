@@ -51,11 +51,12 @@ const Container = styled.div`
 
 const ServiceTitle = styled.div`
   width: 100%;
+  color: #f0f0f0;
   display: flex;
   justify-content: center;
   padding-top: 7vh;
-  font-weight: 600;
-  font-size: 3vh;
+  font-weight: 500;
+  font-size: 25px;
 `
 
 const ServiceCardContainer = styled.div`

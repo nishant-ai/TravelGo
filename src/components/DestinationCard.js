@@ -21,6 +21,7 @@ export default DestinationCard
 
 const Container = styled.div`
     cursor: pointer;
+    border: 0.5px solid #647696;
     display: flex;
     margin: 2vh 5vw;
     width: 38vw;
@@ -55,12 +56,15 @@ const Content = styled.div`
 `
 
 const Place = styled.div`
-    font-weight: 600;
+    font-weight: 700;
     margin-right: 5vw;
+    color: #f0f0f0;
 `
 
 const Activities = styled.div`
+    color: #f0f0f0;
 `
 
 const Duration = styled.div`
+    color: yellow;
 `
