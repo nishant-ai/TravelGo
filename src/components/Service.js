@@ -25,7 +25,7 @@ const cards = [
 
 function Service() {
   return (
-    <Container id='about'>
+    <Container id='about-us'>
         <ServiceTitle>Our Services</ServiceTitle>
         <ServiceCardContainer>
             {
