@@ -29,13 +29,13 @@ const Navigation = () => {
     return ( 
         <Nav>
             <List >
-                 <a  href='/'>Home</a>
+                 <a  href='#home'>Home</a>
             </List>
            <List >
-              <a href='/'>About Us</a>
+              <a href='#about-us'>About Us</a>
            </List>
            <List>
-              <a href='/'>Package</a>
+              <a href='#packages'>Package</a>
           </List>
         </Nav>
      );
