@@ -84,6 +84,7 @@ const Nav = styled.div`
   width: 100%;
   height: 5rem;
   backdrop-filter: blur(5px);
+  box-shadow: -2px 2px 10px -3px #fff;
   @media (max-width:600px) {
     padding:0 1rem;
    
@@ -166,6 +167,7 @@ const Right = styled.div`
 
 
 const Profile = styled.img`
-  height: 50%;
+  width: 42px;
+  height: 42px;
   cursor: pointer;
 `
