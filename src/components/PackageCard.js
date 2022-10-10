@@ -54,17 +54,18 @@ const Background = styled.img`
 `
 
 const Lower = styled.div`
-    border-radius: 0 9px 9px 0;
-    padding: 25px 15px;
     position: relative;
+    background-color: white;
+    border-radius: 0 9px 9px 0;
+    padding: 25px 17px;
     left: -5px;
+    width: inherit;
     @media (min-width: 768px) {
-        width: 25vw;
         position: absolute;
         border-radius: 0 0 9px 9px;
         padding: 20px 15px;
         left: auto;
-        background-color: white;
+        width: 25vw;
     }
 `
 
