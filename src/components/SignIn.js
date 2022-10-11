@@ -14,7 +14,7 @@ const SignIn = () => {
                         <LoginButton>LOGIN</LoginButton>
                         <p style={{margin:'0px'}}>or</p>
                         <GoogleLogin>Login with <GoogleIcon/></GoogleLogin>
-                        <SignInOption>Don't have an account?<a href='#' style={{color:'#035d2f'}}> Sign Up</a></SignInOption>
+                        <SignInOption>Don't have an account?<a href='/' style={{color:'#035d2f'}}> Sign Up</a></SignInOption>
                     </LoginContainer>
                     <BackGround style={{backgroundImage:`url(${cover})`}} />
                 </InnerContainer>
