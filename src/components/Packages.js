@@ -98,4 +98,9 @@ const Discover = styled.a`
   color: white;
   cursor: pointer;
   margin-bottom: 5vh;
+  text-decoration: none;
+  &:hover
+  {
+    color: white;
+  }
 `
