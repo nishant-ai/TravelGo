@@ -24,6 +24,7 @@ const Container = styled.div`
     padding-top: 6vh;
     width: 100vw;
     height: 90vh;
+    background: #333;
     display: flex;
     flex-direction: column;
 `

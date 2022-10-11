@@ -6,7 +6,7 @@ import playStore from '../assets/playstore.svg'
 
 function Footer() {
   return (
-    <Container>
+    <Container style={{background: '#333'}}>
 
         <Left>
           <Logo src={footerLogo} alt='' />
