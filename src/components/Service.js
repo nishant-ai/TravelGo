@@ -30,7 +30,7 @@ function Service() {
         <ServiceCardContainer>
             {
                 cards.map((card) => (
-                    <ServiceCard title={card.title} text={card.text} image={card.image} active={card.active} />
+                    <ServiceCard title={card.title} text={card.text} image={card.image} active={card.active} key={card.id} />
                 ))
             }
         </ServiceCardContainer>

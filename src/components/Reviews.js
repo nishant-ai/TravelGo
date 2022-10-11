@@ -31,18 +31,4 @@ function Reviews() {
   )
 }
 
-export default Reviews
-
-{/* <>
-      <>
-        <img
-          className="d-block w-100"
-          src={require('../assets/loation.png')}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-        </>
-        </> */}
+export default Reviews;
