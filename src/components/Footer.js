@@ -3,34 +3,35 @@ import styled from 'styled-components'
 import footerLogo from '../assets/footer-logo.svg'
 import appStore from '../assets/appstore.svg'
 import playStore from '../assets/playstore.svg'
+import '../styles/footer.css'
 
 function Footer() {
   return (
     <Container style={{background: '#333'}}>
 
         <Left>
-          <Logo src={footerLogo} alt='' />
+          <Logo src={footerLogo} alt='' /> 
           <LeftText>Book your trip in minute, get full Control for much longer.</LeftText>
         </Left>
 
-        <Mid>
-          <List>
+        <Mid className='links'>
+          <List className="list">
             <ListTitle>Company</ListTitle>
-            <ListItem>About</ListItem>
-            <ListItem>Careers</ListItem>
-            <ListItem>Mobile</ListItem>
+            <a href='#home'  className="m-2">Home</a>
+            <a href='#about-us'  className="m-2">About Us</a>
+            <a href='#' className="m-2">Careers</a>
           </List>
-          <List>
+          <List className='list'>
             <ListTitle>Contact</ListTitle>
-            <ListItem>Help/FAQs</ListItem>
-            <ListItem>Press</ListItem>
-            <ListItem>Affiliates</ListItem>
+            <a href='#'  className="m-2">Help/FAQs</a>
+            <a href='#'  className="m-2">Press</a>
+            <a href='#'  className="m-2">Affiliates</a>
           </List>
-          <List>
+          <List className='list'>
             <ListTitle>More</ListTitle>
-            <ListItem>Airline fees</ListItem>
-            <ListItem>Airline</ListItem>
-            <ListItem>Low Fare tips</ListItem>
+            <a href='#'  className="m-2">Airline Fees</a>
+            <a href='#'  className="m-2">Airline</a>
+            <a href='#'  className="m-2">Low Fair Trips</a>
           </List>
         </Mid>
 
