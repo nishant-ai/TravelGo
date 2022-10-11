@@ -1,31 +1,16 @@
-import './App.css';
-import BookingSteps from './components/BookingSteps';
-// import styled from 'styled-components';
-
-import Cover from './components/Cover';
-import Destinations from './components/Destinations';
-import Navbar from './components/Navbar/Navbar';
-import Packages from './components/Packages';
-import Reviews from './components/Reviews';
-import Service from './components/Service';
-import ServiceStats from './components/ServiceStats';
-import Subscription from './components/Subscription';
-import Footer from './components/Footer';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Component from './components/Component';
+import SignIn from './components/SignIn';
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Cover />
-      <Service />
-      <ServiceStats />
-      <Destinations />
-      <Packages />
-      <BookingSteps />
-      <Reviews />
-      <Subscription />
-      <Footer />
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Component />} />
+          <Route path='/signin' element={<SignIn />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
