@@ -8,7 +8,7 @@ function Reviews() {
         {/* <img src={require('../assets/loation.png')} className="DecorationL" alt='' /> */}
         <div className="title">What People Say About Us</div>
             <Carousel className='carousel'>
-                <Carousel.Item >
+                <Carousel.Item interval={1000}>
                     <img className="backgorund" src={require("../assets/reviewbg.png")} alt='pic'/>
                     <Carousel.Caption className="content">
                         <img src={require("../assets/person.png")} alt="avatar" className='avatar'/>
@@ -16,7 +16,7 @@ function Reviews() {
                         <span>- Jeo Stanley</span>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item interval={1500}>
                     <img className="backgorund" src={require("../assets/reviewbg.png")} alt='pic'/>
                     <Carousel.Caption className="content">
                         <img src={require("../assets/person.png")} alt="avatar" className='avatar'/>
