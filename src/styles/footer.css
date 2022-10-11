@@ -1,0 +1,14 @@
+.list {
+    display: flex; 
+    flex-direction: column;
+}
+
+.list a{
+    color: #fff; 
+    text-decoration: none;
+}
+
+.list a:hover{
+    color: #333; 
+    text-decoration: none;
+}
