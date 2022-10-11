@@ -43,6 +43,7 @@ export default Service
 const Container = styled.div`
   width: 100vw;
   display: flex;
+  background: #333;
   flex-direction: column;
   height: 60vh;
   padding-top: 1vh;

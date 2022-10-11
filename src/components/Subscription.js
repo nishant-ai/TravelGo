@@ -25,6 +25,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #333;
 `
 
 const SubscriptionForm = styled.div`
