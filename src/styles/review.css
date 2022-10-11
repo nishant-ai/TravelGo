@@ -1,0 +1,60 @@
+.cont-carousel {
+    background: #333;
+    height: 100vh;
+}
+.title{
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 4vh;
+    width: 100%;
+    background: #333;
+    text-align: center;
+    color: #fff;
+}
+.carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70vh;
+}
+
+.backgorund{
+    position: relative;
+    height: 50vh;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    backdrop-filter: sepia(100%) blur(2px);
+    width: 500px;
+    position: absolute;
+    height: 200px;
+    /* margin: 0px auto; */
+    margin: 0px auto;
+}
+
+.avatar{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    bottom: 50px;
+    padding: 0px;
+}
+
+span {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.DecorationR {
+    position: relative;
+    right: -90vw;
+    top: -30vw;
+}

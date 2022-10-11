@@ -1,6 +1,6 @@
-import React from 'react'
-import Carousel from 'react-bootstrap/Carousel'
-import '../styles/review.css'
+import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import '../styles/review.css';
 
 function Reviews() {
   return (
