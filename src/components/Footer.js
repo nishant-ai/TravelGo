@@ -19,19 +19,19 @@ function Footer() {
             <ListTitle>Company</ListTitle>
             <a href='#home'  className="m-2">Home</a>
             <a href='#about-us'  className="m-2">About Us</a>
-            <a href='#' className="m-2">Careers</a>
+            <a href='#home' className="m-2">Careers</a>
           </List>
           <List className='list'>
             <ListTitle>Contact</ListTitle>
-            <a href='#'  className="m-2">Help/FAQs</a>
-            <a href='#'  className="m-2">Press</a>
-            <a href='#'  className="m-2">Affiliates</a>
+            <a href='#home'  className="m-2">Help/FAQs</a>
+            <a href='#home'  className="m-2">Press</a>
+            <a href='#home'  className="m-2">Affiliates</a>
           </List>
           <List className='list'>
             <ListTitle>More</ListTitle>
-            <a href='#'  className="m-2">Airline Fees</a>
-            <a href='#'  className="m-2">Airline</a>
-            <a href='#'  className="m-2">Low Fair Trips</a>
+            <a href='#home'  className="m-2">Airline Fees</a>
+            <a href='#home'  className="m-2">Airline</a>
+            <a href='#home'  className="m-2">Low Fair Trips</a>
           </List>
         </Mid>
 
@@ -112,12 +112,12 @@ const ListTitle = styled.li`
   font-size: 18px;
 `
 
-const ListItem = styled.li`
-  margin-bottom: 3vh;
-  color: #5E6282;
-  font-weight: 400;
-  color: #c0ded9;
-`
+// const ListItem = styled.li`
+//   margin-bottom: 3vh;
+//   color: #5E6282;
+//   font-weight: 400;
+//   color: #c0ded9;
+// `
 
 const RightLogo = styled.img`
   margin: 0 8px;
