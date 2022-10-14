@@ -7,8 +7,8 @@ function Cover() {
       <CoverBody>
         <CoverTitle>Your Imagination Is</CoverTitle>
         <CoverTitle>Your Only Limit</CoverTitle>
-        <CoverTextu>We always try to make our customer Happy. We provide all kind of facilities.</CoverTextu>
-        <CoverText>Your Satisfaction is our main priority</CoverText>
+        <CoverTextu>We always try to make our customer happy. We provide all kind of facilities.</CoverTextu>
+        <CoverText>Your satisfaction is our main priority</CoverText>
         <CoverButton href='/'>Discover More</CoverButton>
       </CoverBody>
       <BottomFade />
@@ -21,6 +21,7 @@ export default Cover
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  
 `
 
 const CoverImg = styled.img`
@@ -47,6 +48,9 @@ const CoverBody = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 0 16px;
+  
 
 `
 const CoverTitle = styled.div`
