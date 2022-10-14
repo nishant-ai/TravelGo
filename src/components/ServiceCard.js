@@ -34,6 +34,15 @@ const Container = styled.div`
   -webkit-box-shadow: -3px 22px 38px -9px rgba(156, 156, 156, 1);
   -moz-box-shadow: -3px 22px 38px -9px rgba(156, 156, 156, 1);
   box-shadow: -3px 22px 38px -9px rgba(156, 156, 156, 1);
+}
+@media (max-width: 480px) {
+        text-align: center;
+        padding: 8px;
+        margin-bottom: 16px;
+        width: 100%;
+        // height: 100%;6
+        display: grid;
+      }
 `;
 
 const ContainerInactive = styled.div`
@@ -56,11 +65,24 @@ const ContainerInactive = styled.div`
       -6px 6px 20px rgba(88, 88, 88, 0.16),
       -6px -6px 20px rgba(88, 88, 88, 0.16), 6px 6px 20px rgba(88, 88, 88, 0.16);
   }
+  }
+  @media (max-width: 480px) {
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    // height: 100%;
+    display: grid;
+  }
 `;
 
 const Image = styled.img`
   width: 2vw;
   margin-bottom: 3vh;
+  @media (max-width: 480px) { 
+    width: 6.8vw;
+   
+  }
 `;
 
 const Title = styled.div`

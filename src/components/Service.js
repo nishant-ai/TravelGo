@@ -47,15 +47,18 @@ const Container = styled.div`
   height: 60vh;
   padding-top: 1vh;
   cursor: pointer;
+  align-items: center;
 `
 
 const ServiceTitle = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
   padding-top: 7vh;
   font-weight: 600;
-  font-size: 3vh;
+  font-size: 30px;
+  color: rgb(240, 240, 240);
 `
 
 const ServiceCardContainer = styled.div`
@@ -63,4 +66,8 @@ const ServiceCardContainer = styled.div`
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    @media (max-width: 480px) {
+        display: grid;
+        padding: 0 32px;
+      }
 `
