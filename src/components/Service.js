@@ -62,14 +62,9 @@ const ServiceTitle = styled.div`
   justify-content: center;
   text-align: center;
   padding-top: 7vh;
-<<<<<<< HEAD
   font-weight: 600;
   font-size: 30px;
   color: rgb(240, 240, 240);
-=======
-  font-weight: 500;
-  font-size: 25px;
->>>>>>> 68a2bd669337dc68c7c9460b356e558aa1743d4a
 `
 
 const ServiceCardContainer = styled.div`
