@@ -15,14 +15,49 @@ const Nav  = styled.ul`
 `
 const List  = styled.li`
     cursor: pointer ;
-    font-weight: 700;
-    padding: 0.4rem  0.7rem;
-    border: 3px solid transparent;
-    :hover{
-        border: 3px solid white;
-        border-radius:1rem;
-        
-    }
+    font-weight: 100;
+    border: 2px solid #04A551;
+    border-radius: 1.5rem;
+    color: #ff0;
+    margin:1rem;
+    text-align: center;
+    font-family: roboto;
+    font-size: 1.35rem;
+    overflow: hidden;
+    padding: 0.75rem 1.6rem;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+::after {
+  background-color: #04A551;
+  border-radius: 3rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+  
+&:hover::after
+{
+  transform: translate(0, 0);
+}
+&:hover
+{
+  border: 2px solid transparent;
+  color: indigo;
+  transform :scale(1.05);
+  will-change :transform;
+}
 `
 
 const Navigation = () => {

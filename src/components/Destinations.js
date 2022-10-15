@@ -44,9 +44,11 @@ const DestinationCards = styled.div`
 
 const Title = styled.div`
     font-weight: 700;
-    font-size: 4vh;
+    font-size: 25px;
     width: 100%;
     text-align: center;
+    font-wieght: 500;
+    color: #f0f0f0;
 `
 
 const Background = styled.img`
