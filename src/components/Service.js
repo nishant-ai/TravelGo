@@ -48,6 +48,11 @@ const Container = styled.div`
   padding-top: 1vh;
   cursor: pointer;
   align-items: center;
+  @media (max-width: 480px) {
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
 `
 
 const ServiceTitle = styled.div`

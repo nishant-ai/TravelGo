@@ -37,11 +37,14 @@ const Container = styled.div`
 }
 @media (max-width: 480px) {
         text-align: center;
+        justify-content: center;
+        align-items: center;
         padding: 8px;
         margin-bottom: 16px;
         width: 100%;
         // height: 100%;6
-        display: grid;
+        display: flex;
+        flex-direction: column;
       }
 `;
 
@@ -68,11 +71,14 @@ const ContainerInactive = styled.div`
   }
   @media (max-width: 480px) {
     text-align: center;
+    justify-content: center;
+    align-items: center;
     padding: 8px;
     margin-bottom: 16px;
     width: 100%;
     // height: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
   }
 `;
 

@@ -28,12 +28,19 @@ const Container = styled.div`
     flex-direction: column;
     width: 100vw;
     height: 80vh;
+    @media (max-width: 480px) {
+      padding: 0 32px;
+      height: 100%;
+    }
 `
 
 const Background = styled.img`
   position: absolute;
   align-self: center;
   max-width: 100vw;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `
 const CoverTitleu = styled.div` // cover title upper text
   margin-top: 10vh;
@@ -41,6 +48,10 @@ const CoverTitleu = styled.div` // cover title upper text
   font-weight: 600;
   font-size: 6vh;
   text-align: center;
+  @media (max-width: 480px) {
+    margin-top: 70px;
+    font-size: 24px;
+  }
 `
 
 const CoverTitle = styled.div`
@@ -48,11 +59,17 @@ const CoverTitle = styled.div`
   font-weight: 600;
   font-size: 6vh;
   text-align: center;
+  @media (max-width: 480px) {
+    
+  }
 `
 const CoverText = styled.div`
   font-size: 14px;
   color: black;
   text-align: center;
+  @media (max-width: 480px) {
+    
+  }
 `
 
 const CoverTextu = styled.div` // cover text upper
@@ -60,11 +77,21 @@ const CoverTextu = styled.div` // cover text upper
   color: black;
   padding-top: 5vh;
   text-align: center;
+  @media (max-width: 480px) {
+    position: absolute;
+  }
 `
 
 const StatsCards = styled.div`
   display: flex;
   flex: 1;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
+  @media (max-width: 480px) {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+  }
 `
