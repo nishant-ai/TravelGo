@@ -38,7 +38,7 @@ function Navbar() {
       <Right>
         <FavIcon size="42" />
         <Profile src={require('../../assets/Profile.png')} alt='Profile' />
-        <Login href='/signin'>Login</Login>
+        <Login href='/signin' style={{textDecoration: 'none'}}>Login</Login>
       </Right>
       <MenuIconCon>
         {openNav ?
@@ -60,7 +60,7 @@ function Navbar() {
       <Right>
         <FavIcon size="42" />
         <Profile src={require('../../assets/Profile.png')} alt='Profile' />
-        <Login href='/signin'>Login</Login>
+        <Login href='/signin' style={{textDecoration: 'none'}}>Login</Login>
       </Right>
       <MenuIconCon>
         {openNav ?
