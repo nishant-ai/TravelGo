@@ -28,6 +28,10 @@ const Container = styled.div`
     flex-direction: column;
     width: 100vw;
     height: 80vh;
+    @media (max-width: 480px) {
+      padding: 0 16px;
+      height: 100%;
+    }
 `
 
 const Background = styled.img`
@@ -45,7 +49,7 @@ const CoverTitleu = styled.div` // cover title upper text
 `
 
 const CoverTitle = styled.div`
-  color: #f0f0f0;
+  color: black;
   font-weight: 600;
   font-size: 6vh;
   text-align: center;
@@ -71,4 +75,11 @@ const StatsCards = styled.div`
   justify-content: space-evenly;
   align-items: center;
   color:#f0f0f0;
+  @media (max-width: 480px) {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+  }
 `

@@ -28,6 +28,10 @@ const Container = styled.div`
   box-shadow: 6px -6px 20px rgba(88, 88, 88, 0.16),
     -6px 6px 20px rgba(88, 88, 88, 0.16), -6px -6px 20px rgba(88, 88, 88, 0.16),
     6px 6px 20px rgba(88, 88, 88, 0.16);
+    @media (max-width: 480px) {
+      width: 100%;
+      height: 100%;
+    }
 `;
 
 const Image = styled.img`

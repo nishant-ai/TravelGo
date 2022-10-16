@@ -47,6 +47,12 @@ const Container = styled.div`
   height: 60vh;
   padding-top: 1vh;
   cursor: pointer;
+  align-items: center;
+  @media (max-width: 480px) {
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
 `
 
 const ServiceTitle = styled.div`
@@ -54,9 +60,11 @@ const ServiceTitle = styled.div`
   color: #f0f0f0;
   display: flex;
   justify-content: center;
+  text-align: center;
   padding-top: 7vh;
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: 600;
+  font-size: 30px;
+  color: rgb(240, 240, 240);
 `
 
 const ServiceCardContainer = styled.div`
@@ -64,4 +72,8 @@ const ServiceCardContainer = styled.div`
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    @media (max-width: 480px) {
+        display: grid;
+        padding: 0 32px;
+      }
 `
