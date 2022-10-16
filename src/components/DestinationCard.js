@@ -33,17 +33,34 @@ const Container = styled.div`
         transform: scale(1.05);
         box-shadow: 0 30px 45px -15px rgba(255,255,255,0.57);
     }
+    @media (max-width: 480px) {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-gap: 10px 0;
+        grid-template-columns: 1fr 1fr auto;
+        margin: 0;
+        
+    }  
 `
 
 const Image = styled.img`
     height: 22vh;
     margin-right: 2vw;
+    @media (max-width: 480px) {
+        // width: 100%;
+        // height: 100%;
+        margin: 0;
+    }
 `
 
 const Navigate = styled.img`
     height: 15%;
     align-self: center;
     margin-left: 4vw;
+    @media (max-width: 480px) {
+        margin: 0;
+    }
 `
 
 const Details = styled.div`
@@ -53,12 +70,19 @@ const Details = styled.div`
 const Content = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
+    @media (max-width: 480px) {
+       display: grid;
+    }
 `
 
 const Place = styled.div`
     font-weight: 700;
     margin-right: 5vw;
     color: #f0f0f0;
+    @media (max-width: 480px) {
+        margin: 0;
+    }
 `
 
 const Activities = styled.div`
