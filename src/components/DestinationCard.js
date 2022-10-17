@@ -48,8 +48,8 @@ const Image = styled.img`
     height: 22vh;
     margin-right: 2vw;
     @media (max-width: 480px) {
-        // width: 100%;
-        // height: 100%;
+        width: 100%;
+        height: 100%;
         margin: 0;
     }
 `

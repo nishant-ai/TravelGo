@@ -1,75 +1,73 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Navigation from './Navigations'
-import { AiOutlineStar } from 'react-icons/ai'
-import { MdMenu } from "react-icons/md"
-import { ImCross } from "react-icons/im"
+import {AiOutlineStar}  from 'react-icons/ai'
+import {MdMenu} from "react-icons/md"
+import {ImCross}  from "react-icons/im"
 import MobileNavigation from './MobileNavigation'
 
 function Navbar() {
   const [openNav, setOpenNav] = useState(false)
   const [scrollPosition, setScrollPosition] = useState(0);
-  const handleScroll = () => {
+const handleScroll = () => {
     const position = window.pageYOffset;
-    setScrollPosition(position);
-  };
+    setScrollPosition(position); 
+};
 
-  useEffect(() => {
+useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+}, []);
 
-  const clickHandler = () => {
+  const clickHandler =()=>{
     setOpenNav(!openNav)
   }
   return (
-    scrollPosition < 400 ? <Nav>
+    scrollPosition<400 ? <Nav>
       <Left>
-
+       
         <Logo src={require('../../assets/TravelGo.png')} />
       </Left>
-      <Navigation />
-      {openNav &&
-        <MobileNavigation />
-      }
+      <Navigation/>
+      {openNav  &&
+        <MobileNavigation/>
+     }
       <Right>
-        <FavIcon size="42" />
+        <FavIcon  size="42" />
         <Profile src={require('../../assets/Profile.png')} alt='Profile' />
-        <Login href='/signin'>Login</Login>
       </Right>
-      <MenuIconCon>
-        {openNav ?
-          <CrossIcon onClick={clickHandler} size="29" />
-          :
-          <MenuIcon onClick={clickHandler} size="37" />
+        <MenuIconCon>
+          {openNav  ?       
+          <CrossIcon  onClick={clickHandler}  size="29"/>
+        : 
+          <MenuIcon   onClick={clickHandler} size="37"/>
         }
-
-      </MenuIconCon>
+        
+        </MenuIconCon>
     </Nav> : <FixedNav>
-      <Left>
-
-        <Logo src={require('../../assets/TravelGo.png')} />
-      </Left>
-      <Navigation />
-      {openNav &&
-        <MobileNavigation />
-      }
-      <Right>
-        <FavIcon size="42" />
-        <Profile src={require('../../assets/Profile.png')} alt='Profile' />
-        <Login href='/signin'>Login</Login>
-      </Right>
-      <MenuIconCon>
-        {openNav ?
-          <CrossIcon onClick={clickHandler} size="29" />
-          :
-          <MenuIcon onClick={clickHandler} size="37" />
-        }
-
-      </MenuIconCon>
+    <Left>
+       
+       <Logo src={require('../../assets/TravelGo.png')} />
+     </Left>
+     <Navigation/>
+     {openNav  &&
+       <MobileNavigation/>
+    }
+     <Right>
+       <FavIcon  size="42" />
+       <Profile src={require('../../assets/Profile.png')} alt='Profile' />
+     </Right>
+       <MenuIconCon>
+         {openNav  ?       
+         <CrossIcon  onClick={clickHandler}  size="29"/>
+       : 
+         <MenuIcon   onClick={clickHandler} size="37"/>
+       }
+       
+       </MenuIconCon>
     </FixedNav>
   )
 }
@@ -86,7 +84,6 @@ const Nav = styled.div`
   width: 100%;
   height: 5rem;
   backdrop-filter: blur(5px);
-  box-shadow: -2px 2px 10px -3px #fff;
   @media (max-width:600px) {
     padding:0 1rem;
    
@@ -138,7 +135,7 @@ const FavIcon = styled(AiOutlineStar)`
         color: orange;
        }
     
-`
+`  
 const Left = styled.div`
   flex: 0.7;
   display: flex;
@@ -169,24 +166,6 @@ const Right = styled.div`
 
 
 const Profile = styled.img`
-  width: 42px;
-  height: 42px;
+  height: 50%;
   cursor: pointer;
-`
-
-const Login = styled.a`
-  background-color: #00A651;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: white;
-  margin-left:2rem;
-  display:flex;
-  align-items:center;
-  &:hover{
-    background-color:white;
-    color:#00A651;
-    transition:.3s;
-  }
 `

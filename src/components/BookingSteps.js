@@ -39,6 +39,13 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 80vh;
+    @media (max-width: 480px) {
+        display: grid;
+        // flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 30px 16px;
+        }
 `
 
 const Title = styled.div`
@@ -55,12 +62,21 @@ const TitleMini = styled.div`
     font-weight: 400;
     margin-bottom: 5vh;
     color: #feb236;
+    @media (max-width: 480px) {
+        margin: 0;
+        text-align: center;
+        }
 `
 
 const Body = styled.div`
     display: flex;
     justify-content: flex-end;
     width: 100vw;
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        }
 `
 
 const Left = styled.div`
@@ -69,9 +85,18 @@ const Left = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: 480px) {
+        margin: 0;
+    }
 `
 
 const Right = styled.img`
     max-height: 60vh;
     margin-right: 15vw;
+    @media (max-width: 480px) {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
 `

@@ -27,7 +27,7 @@ function Packages() {
             <PackageCard
                 location='Japan'
                 cost='$800 / Person'
-                tagline='Enjoy the Shrimes and blossoms here in this beautiful country'
+                tagline='Enjoy the Shrines and blossoms here in this beautiful country'
                 stay='3 Days, 2 Nights'
                 image='japan.png'
             />
@@ -59,6 +59,15 @@ const Container = styled.div`
     @media (min-width: 768px) {
         height: 100vh;
     }
+    @media (max-width: 480px) {
+        height: 100%;
+        width: 100%;
+        // padding: 32px 32px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
 `
 
 const Title = styled.div`
@@ -67,6 +76,10 @@ const Title = styled.div`
     width: 100%;
     text-align: center;
     margin-top: 1vh;
+    @media (max-width: 480px) {
+        margin: 0;
+        padding: 32px 0 32px 0;
+    }
 `
 
 const Package = styled.div`
@@ -76,6 +89,13 @@ const Package = styled.div`
     justify-content: space-around;
     align-items: center;
     padding: 1vw 7vw;
+    @media (max-width: 480px) {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
 `
 
 const PackageCards = styled.div`
@@ -86,6 +106,15 @@ const PackageCards = styled.div`
     @media (min-width: 768px) {
         flex-direction: row
     }
+    @media (max-width: 480px) {
+        height: 100%;
+        width: 100%;
+        padding: 32px 32px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
 `
 
 const Discover = styled.a`

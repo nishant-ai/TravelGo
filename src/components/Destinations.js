@@ -29,6 +29,8 @@ const Container = styled.div`
     @media (max-width: 480px) {
         width: 100%;
         height: 100%;
+        justify-content: center;
+        padding: 0 32px 50px;
     }  
 `
 
@@ -47,14 +49,12 @@ const DestinationCards = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: center;
   align-items: flex-end;
   @media (max-width: 480px) {
     display: grid;
     align-items: center;
     width: 100%;
     grid-gap: 20px 0;
-    justify-content: center;
   }
 `
 

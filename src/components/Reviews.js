@@ -28,6 +28,9 @@ const Container = styled.div`
     justify-content: space-around;
     align-items: center;
     height: 80vh;
+    @media (max-width: 480px) {
+        display: grid;
+    }
 `
 
 const Title = styled.div`
