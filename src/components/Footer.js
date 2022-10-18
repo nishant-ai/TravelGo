@@ -53,6 +53,15 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 480px) {
+    overflow: hidden;
+    padding: 0 16px
+    width: 100%;
+    // height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 `
 
 const Left = styled.div`
@@ -64,6 +73,12 @@ const Left = styled.div`
   flex: 0.2;
   height: 50vh;
   font-size: 14px;
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    grid-column: 1 / 5;
+  }
 `
 const Mid = styled.div`
   display: flex;
@@ -71,6 +86,12 @@ const Mid = styled.div`
   align-items: center;
   flex: 0.6;
   height: 50vh;
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 5;
+    grid-row: 3;
+  }
 `
 const Right = styled.div`
   padding: 1vh 2vw;
@@ -80,16 +101,30 @@ const Right = styled.div`
   align-items: center;
   flex: 0.2;
   height: 50vh;
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+  }
 `
 
 const Logo = styled.img`
   height: 6.5vh;
+  @media (max-width: 480px) {
+    margin: 0;
+    height: 100%;
+  }
 `
 
 const LeftText = styled.p`
   margin-top: 6vh;
   width: 20vw;
   color: #647696;
+  @media (max-width: 480px) {
+    margin: 0;
+    width: 100%;
+  }
 `
 
 const RightText = styled.p`
@@ -98,6 +133,10 @@ const RightText = styled.p`
   color: #5E6282;
   margin-top: 4vh;
   padding-left: 0.8vw;
+  @media (max-width: 480px) {
+    padding: 0;
+    margin: 0;
+  }
 `
 
 const List = styled.ul`
@@ -109,6 +148,9 @@ const ListTitle = styled.li`
   margin-bottom: 6vh;
   color: #f0f0f0;
   font-size: 18px;
+  @media (max-width: 480px) {
+    margin: 0;
+  }
 `
 
 const ListItem = styled.li`
@@ -116,11 +158,18 @@ const ListItem = styled.li`
   color: #5E6282;
   font-weight: 400;
   color: #c0ded9;
+  @media (max-width: 480px) {
+    margin: 0;
+  }
 `
 
 const RightLogo = styled.img`
   margin: 0 8px;
   width: 8vw;
+  @media (max-width: 480px) {
+    margin: 0;
+    width: 100%;
+  }
 `
 
 const Logos = styled.div`

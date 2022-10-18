@@ -11,9 +11,9 @@ function ServiceStats() {
         <CoverText>facilities. Your Satisfaction is our main priority.</CoverText>
         <StatsCards>
             <StatsCard count='15+' title ='Years of Experience' image='calendar.png' />
-            <StatsCard count='15k+' title ='Happy Travellers' image='chart.png' />
+            <StatsCard count='15k+' title ='Happy Travelers' image='chart.png' />
             <StatsCard count='650+' title ='Places Visited' image='location.png' />
-            <StatsCard count='2k+' title ='Travel History' image='history.png' />
+            <StatsCard count='2k+' title ='Travel History' image='history.png' /> 
         </StatsCards>
         <Background src={require('../assets/world-map.png')} alt='' />
     </Container>
