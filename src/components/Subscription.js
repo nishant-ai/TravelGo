@@ -24,9 +24,7 @@ const Container = styled.div`
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;@media (max-width: 480px) {
-      overflow: hidden;
-    }
+    align-items: center;
    
 `
 
@@ -62,7 +60,7 @@ const TopDecor = styled.img`
     height: 6vh;
     right: 18.5vw;
     @media (max-width: 480px) {
-      margin-top: -110px; 
+      margin-top: -100px; 
     }
 `
 
@@ -114,6 +112,6 @@ const Button = styled.a`
     width: 100%;
     text-align: center;
     margin-left: 0;
-    margin-top: 10px;
+    margin-top: .4rem
   }
 `
