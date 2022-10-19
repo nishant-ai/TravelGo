@@ -1,13 +1,17 @@
 .cont-carousel {
     background: #333;
     height: 100vh;
+    @media (max-width: 480px) {
+    overflow: hidden;
+  }
+
 }
 .title{
     padding-top: 30px;
     font-weight: 700;
     font-size: 4vh;
     width: 100%;
-    background: #333;
+    background: #333
     text-align: center;
     color: #fff;
 }

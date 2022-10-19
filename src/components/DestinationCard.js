@@ -70,10 +70,12 @@ const Details = styled.div`
 const Content = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     @media (max-width: 480px) {
        display: grid;
     }
-`
+` 
 
 const Place = styled.div`
     font-weight: 700;

@@ -55,12 +55,13 @@ const DestinationCards = styled.div`
     align-items: center;
     width: 100%;
     grid-gap: 20px 0;
+    text-align-center;
   }
 `
 
 const Title = styled.div`
     font-weight: 700;
-    font-size: 25px;
+    font-size: 25px; 
     width: 100%;
     text-align: center;
     font-weight: 500;

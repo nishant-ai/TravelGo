@@ -19,7 +19,7 @@ const Nav  = styled.ul`
      @media (max-width:600px) {
         display: flex;
      }
-`
+` 
 const List  = styled.li`
       width: 100%;
     text-align: start;

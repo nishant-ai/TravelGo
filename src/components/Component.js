@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css';
 import BookingSteps from './BookingSteps';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
 import Cover from './Cover';
 import Destinations from './Destinations';
