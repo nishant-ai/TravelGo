@@ -70,7 +70,6 @@ const Details = styled.div`
 const Content = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
     @media (max-width: 480px) {
        display: grid;
     }
