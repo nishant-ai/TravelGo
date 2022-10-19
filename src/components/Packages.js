@@ -62,10 +62,10 @@ const Container = styled.div`
     @media (max-width: 480px) {
         height: 100%;
         width: 100%;
-        // padding: 32px 32px;
         justify-content: center;
         align-items: center;
         margin: 0;
+        // overflow: hidden;
     }
 
 `

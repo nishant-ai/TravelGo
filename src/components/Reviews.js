@@ -28,9 +28,6 @@ const Container = styled.div`
     justify-content: space-around;
     align-items: center;
     height: 80vh;
-    @media (max-width: 480px) {
-        visibility: hidden; // remove this before merging sis
-    }
 `
 
 const Title = styled.div`
@@ -50,8 +47,6 @@ const ReviewCard = styled.div`
 const ReviewBg = styled.img`
     position: absolute;
     height: 50vh;
-    @media (max-width: 480px) {
-    }
 `
 
 const ReviewBody = styled.div`
@@ -86,13 +81,9 @@ const PersonName = styled.div`
 const DecorationL = styled.img`
     position: absolute;
     left: -45vw;
-    @media (max-width: 480px) {
-    }
 `
 
 const DecorationR = styled.img`
     position: absolute;
     right: -50vw;
-    @media (max-width: 480px) {
-    }
 `

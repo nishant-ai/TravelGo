@@ -24,8 +24,9 @@ const Container = styled.div`
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;@media (max-width: 480px) {
-      overflow: hidden;
+    align-items: center;
+    media (max-width: 480px) {
+      margin-top: 100px; 
     }
    
 `

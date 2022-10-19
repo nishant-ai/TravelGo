@@ -54,7 +54,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 480px) {
-    overflow: hidden;
+    // overflow: hidden;
     padding: 32px 16px;
     width: 100%;
     display: grid;

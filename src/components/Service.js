@@ -52,6 +52,7 @@ const Container = styled.div`
     height: 100%;
     align-content: center;
     justify-content: center;
+    // overflow: hidden;
 }
 `
 
