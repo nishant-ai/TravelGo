@@ -23,15 +23,18 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   padding: 3vw 1vh;
   box-shadow: 6px -6px 20px rgba(88, 88, 88, 0.16),
     -6px 6px 20px rgba(88, 88, 88, 0.16), -6px -6px 20px rgba(88, 88, 88, 0.16),
     6px 6px 20px rgba(88, 88, 88, 0.16);
-    @media (max-width: 480px) {
-      width: 100%;
-      height: 100%;
-    }
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 30px 45px -15px rgba(255, 255, 255, 0.57);
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const Image = styled.img`
