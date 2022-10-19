@@ -24,7 +24,7 @@ const List  = styled.li`
     font-family: roboto;
     font-size: 1.35rem;
     overflow: hidden;
-    padding: 0.75rem 1.6rem;
+    padding: 0.50rem 1.6rem;
     position: relative;
     text-decoration: none;
     transition: 0.2s transform ease-in-out;
@@ -64,13 +64,13 @@ const Navigation = () => {
     return ( 
         <Nav>
             <List >
-                 <a  href='#home'>Home</a>
+              <a href='#home' style={{color: 'white', textDecoration: 'none'}}>Home</a>
             </List>
            <List >
-              <a href='#about-us'>About Us</a>
+              <a href='#about-us' style={{color: 'white', textDecoration: 'none'}}>About Us</a>
            </List>
            <List>
-              <a href='#packages'>Package</a>
+              <a href='#packages' style={{color: 'white', textDecoration: 'none'}}>Package</a>
           </List>
         </Nav>
      );

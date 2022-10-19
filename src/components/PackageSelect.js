@@ -21,6 +21,11 @@ const ContainerActive  = styled.a`
   font-weight: 500;
   color: white;
   cursor: pointer;
+  text-decoration: none;
+  &:hover
+  {
+    color: white;
+  }
 `
 
 const ContainerInactive  = styled.a`
@@ -31,4 +36,9 @@ const ContainerInactive  = styled.a`
   font-weight: 500;
   color: white;
   cursor: pointer;
+  text-decoration: none;
+  &:hover
+  {
+    color: white;
+  }
 `

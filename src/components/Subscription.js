@@ -8,7 +8,7 @@ function Subscription() {
             <Title>Subscribe to get information, latest news and other interesting offers about Cobham</Title>
             <Form>
                 <Field placeholder='✉️ Your Email'/>
-                <Button>Subscribe</Button>
+                <Button style={{textDecoration: 'none'}}>Subscribe</Button>
             </Form>
         </SubscriptionForm>
         <TopDecor src={require('../assets/send.png')} alt='' />
@@ -29,6 +29,7 @@ const Container = styled.div`
       margin-top: 100px; 
     }
    
+    background: #333;
 `
 
 const SubscriptionForm = styled.div`
@@ -117,4 +118,8 @@ const Button = styled.a`
     margin-left: 0;
     margin-top: 10px;
   }
+  &:hover{
+    color:white;
+    
+}
 `

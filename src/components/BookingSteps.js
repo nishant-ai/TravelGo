@@ -4,7 +4,7 @@ import Step from './Step'
 
 function BookingSteps() {
   return (
-    <Container>
+    <Container style={{background: '#333'}}>
         <Title>Book Your Next Trip in 3 Easy Steps</Title>
         <TitleMini>Easy and Fast</TitleMini>
         <Body>

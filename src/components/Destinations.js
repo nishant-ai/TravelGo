@@ -4,7 +4,7 @@ import DestinationCard from './DestinationCard'
 
 function Destinations() {
   return (
-    <Container>
+    <Container style={{background: '#333'}}>
         <Title>Our Popular Destinations</Title>
         <Body>
         <Background src={require('../assets/world-map-2.png')} />

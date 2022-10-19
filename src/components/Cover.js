@@ -84,6 +84,7 @@ display:inline-block;
      cursor:pointer;
       background:#04A551;
        color:white;
+       text-decoration:none;
        :hover
        { box-shadow:-300px 0 0 0 rgb(120,178,167) inset;
       }

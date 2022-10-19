@@ -1,0 +1,16 @@
+.list {
+    display: flex; 
+    flex-direction: column;
+}
+
+.list a{
+    color: #fff; 
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.list a:hover{
+    color: #00A651; 
+    text-decoration: none;
+}

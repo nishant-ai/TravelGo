@@ -4,7 +4,8 @@ import StatsCard from './StatsCard'
 
 function ServiceStats() {
   return (
-    <Container>
+    <div style={{background: '#333'}}>
+      <Container>
         <CoverTitleu>We always try to give you</CoverTitleu>
         <CoverTitle>the best service</CoverTitle>
         <CoverTextu>We always try to make our customer Happy. We provide all kind of</CoverTextu>
@@ -15,8 +16,9 @@ function ServiceStats() {
             <StatsCard count='650+' title ='Places Visited' image='location.png' />
             <StatsCard count='2k+' title ='Travel History' image='history.png' /> 
         </StatsCards>
-        <Background src={require('../assets/world-map.png')} alt='' />
+        <Background src={require('../assets/world-map.png')} alt='background' />
     </Container>
+    </div>
   )
 }
 

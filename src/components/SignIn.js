@@ -14,7 +14,7 @@ const SignIn = () => {
                         <LoginButton>LOGIN</LoginButton>
                         <p style={{margin:'0px'}}>or</p>
                         <GoogleLogin>Login with <GoogleIcon/></GoogleLogin>
-                        <SignInOption>Don't have an account?<a href='/' style={{color:'#035d2f'}}> Sign Up</a></SignInOption>
+                        <SignInOption>Don't have an account?<a href='/' style={{color:'#035d2f', textDecoration: 'none'}}> Sign Up</a></SignInOption>
                     </LoginContainer>
                     <BackGround style={{backgroundImage:`url(${cover})`}} />
                 </InnerContainer>
@@ -110,6 +110,7 @@ const LoginButton = styled.button`
     outline:none;
     padding:8px 10px;
     font-weight:bold;
+    text-decoration:none;
     width:50%;
     border-radius:6px;
     background-color:#00A651;
@@ -122,6 +123,7 @@ const LoginButton = styled.button`
 const GoogleLogin = styled.a`
     border:1px solid #00A651;
     border-radius:8px;
+    text-decoration:none;
     padding:8px 10px;
     display:flex;
     width:50%;

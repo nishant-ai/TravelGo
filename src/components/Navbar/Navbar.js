@@ -38,6 +38,7 @@ useEffect(() => {
       <Right>
         <FavIcon  size="42" />
         <Profile src={require('../../assets/Profile.png')} alt='Profile' />
+        <Login href='/signin' style={{textDecoration: 'none'}}>Login</Login>
       </Right>
         <MenuIconCon>
           {openNav  ?       
@@ -48,26 +49,27 @@ useEffect(() => {
         
         </MenuIconCon>
     </Nav> : <FixedNav>
-    <Left>
-       
-       <Logo src={require('../../assets/TravelGo.png')} />
-     </Left>
-     <Navigation/>
-     {openNav  &&
-       <MobileNavigation/>
-    }
-     <Right>
-       <FavIcon  size="42" />
-       <Profile src={require('../../assets/Profile.png')} alt='Profile' />
-     </Right>
-       <MenuIconCon>
-         {openNav  ?       
-         <CrossIcon  onClick={clickHandler}  size="29"/>
-       : 
-         <MenuIcon   onClick={clickHandler} size="37"/>
-       }
-       
-       </MenuIconCon>
+      <Left>
+
+        <Logo src={require('../../assets/TravelGo.png')} />
+      </Left>
+      <Navigation />
+      {openNav &&
+        <MobileNavigation />
+      }
+      <Right>
+        <FavIcon size="42" />
+        <Profile src={require('../../assets/Profile.png')} alt='Profile' />
+        <Login href='/signin' style={{textDecoration: 'none'}}>Login</Login>
+      </Right>
+      <MenuIconCon>
+        {openNav ?
+          <CrossIcon onClick={clickHandler} size="29" />
+          :
+          <MenuIcon onClick={clickHandler} size="37" />
+        }
+
+      </MenuIconCon>
     </FixedNav>
   )
 }
