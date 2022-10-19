@@ -30,7 +30,7 @@ function Footer() {
             <ListTitle>More</ListTitle>
             <ListItem>Airline fees</ListItem>
             <ListItem>Airline</ListItem>
-            <ListItem>Low Fare tips</ListItem>
+            <ListItem>Low fare tips</ListItem>
           </List>
         </Mid>
 
@@ -55,12 +55,9 @@ const Container = styled.div`
   align-items: center;
   @media (max-width: 480px) {
     overflow: hidden;
-    padding: 0 16px
+    padding: 32px 16px;
     width: 100%;
-    // height: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
   }
 `
 
@@ -76,7 +73,6 @@ const Left = styled.div`
   @media (max-width: 480px) {
     width: 100%;
     height: 100%;
-    padding: 0;
     grid-column: 1 / 5;
   }
 `
@@ -89,6 +85,8 @@ const Mid = styled.div`
   @media (max-width: 480px) {
     width: 100%;
     height: 100%;
+    align-items:  flex-start;
+    justify-content: space-around;
     grid-column: 1 / 5;
     grid-row: 3;
   }
@@ -104,6 +102,7 @@ const Right = styled.div`
   @media (max-width: 480px) {
     width: 100%;
     height: 100%;
+    text-align: center;
     grid-column: 1 / 5;
     grid-row: 2 / 3;
   }
@@ -113,7 +112,6 @@ const Logo = styled.img`
   height: 6.5vh;
   @media (max-width: 480px) {
     margin: 0;
-    height: 100%;
   }
 `
 
@@ -124,6 +122,7 @@ const LeftText = styled.p`
   @media (max-width: 480px) {
     margin: 0;
     width: 100%;
+    text-align: center;
   }
 `
 
@@ -134,13 +133,17 @@ const RightText = styled.p`
   margin-top: 4vh;
   padding-left: 0.8vw;
   @media (max-width: 480px) {
-    padding: 0;
+    padding: 16px 0;
     margin: 0;
   }
 `
 
 const List = styled.ul`
   margin: 0 1.3vw;
+  @media (max-width: 480px) {
+    padding: 16px 0;
+    margin: 0;
+  }
 `
 
 const ListTitle = styled.li`
@@ -168,7 +171,8 @@ const RightLogo = styled.img`
   width: 8vw;
   @media (max-width: 480px) {
     margin: 0;
-    width: 100%;
+    width: 125px;
+    height: 37px;
   }
 `
 
