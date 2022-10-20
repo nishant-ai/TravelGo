@@ -69,7 +69,14 @@ span {
         padding: 32px;
     }
     .content{
-        padding: 0 15px;
+        padding: 0 16px;
         width: 100%;
+    }
+    .avatar{
+        height: 80px;
+        width: 80px;
+        position: relative;
+        bottom: 0;
+       
     }
     }
