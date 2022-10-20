@@ -65,6 +65,7 @@ const TopDecor = styled.img`
     right: 18.5vw;
     @media (max-width: 480px) {
       margin-top: -110px; 
+      right: 1.5vw;
     }
 `
 
