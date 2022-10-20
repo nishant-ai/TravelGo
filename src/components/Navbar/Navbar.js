@@ -107,7 +107,6 @@ const FixedNav = styled.div`
     padding: 0 1rem;
   }
 `;
-
 const MenuIconCon = styled.div`
   display: none;
   width: 4rem;
@@ -120,12 +119,11 @@ const MenuIconCon = styled.div`
 const MenuIcon = styled(MdMenu)`
       cursor: pointer;
       color: white; 
-`
-// was unable to resolve this merge sh*t
+`;
 const CrossIcon = styled(ImCross)`
   cursor: pointer;
   color: white;
-`
+`;
 
 const FavIcon = styled(AiOutlineStar)`
   color: orangered;
@@ -143,7 +141,7 @@ const Left = styled.div`
   justify-content: flex-start;
   align-items: center;
 
-`
+`;
 
 
 const Logo = styled.img`
@@ -154,7 +152,7 @@ const Logo = styled.img`
   @media (max-width:600px) {
       height: 20%;
   }
-`
+`;
 
 const Right = styled.div`
   flex: 0.7;
