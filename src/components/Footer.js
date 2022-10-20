@@ -31,7 +31,7 @@ function Footer() {
             <ListTitle className="m-2">More</ListTitle>
             <a href='#home'  className="m-2">Airline Fees</a>
             <a href='#home'  className="m-2">Airline</a>
-            <a href='#home'  className="m-2">Low Fair Trips</a>
+            <a href='#home'  className="m-2">Low Fare Trips</a>
           </List>
         </Mid>
 
