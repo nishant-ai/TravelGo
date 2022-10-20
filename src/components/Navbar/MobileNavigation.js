@@ -8,7 +8,7 @@ const Nav  = styled.ul`
      align-items: center;
      flex:1;
      border-radius: 1rem;
-     height: 100vh;
+     height: 50vh;
      width: 50%;
      background-color:rgba(0, 0, 0, 0.842);
      position: fixed;

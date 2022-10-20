@@ -92,6 +92,9 @@ const Nav = styled.div`
   @media (max-width: 600px) {
     padding: 0 1rem;
   }
+  @media (max-width: 480px) {
+    width: 100vw;
+    }
 `;
 const FixedNav = styled.div`
   padding: 0 5rem;
@@ -107,6 +110,7 @@ const FixedNav = styled.div`
     padding: 0 1rem;
   }
 `;
+
 const MenuIconCon = styled.div`
   display: none;
   width: 4rem;
@@ -117,9 +121,11 @@ const MenuIconCon = styled.div`
 `;
 
 const MenuIcon = styled(MdMenu)`
-      cursor: pointer;
-      color: white; 
-`;
+      cursor:pointer;
+   
+      color:white
+
+`
 const CrossIcon = styled(ImCross)`
   cursor: pointer;
   color: white;
@@ -141,7 +147,7 @@ const Left = styled.div`
   justify-content: flex-start;
   align-items: center;
 
-`;
+`
 
 
 const Logo = styled.img`
@@ -174,7 +180,7 @@ const Login = styled.a`
   font-size: 1rem;
   font-weight: 500;
   color: white;
-  margin-left: 2rem;
+  // margin: 0 2rem;
   display: flex;
   align-items: center;
   &:hover {
