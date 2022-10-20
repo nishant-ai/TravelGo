@@ -180,7 +180,7 @@ const Login = styled.a`
   font-size: 1rem;
   font-weight: 500;
   color: white;
-  // margin: 0 2rem;
+  margin: 0 2rem;
   display: flex;
   align-items: center;
   &:hover {
