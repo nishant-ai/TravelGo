@@ -21,6 +21,7 @@ const ContainerActive  = styled.a`
   font-weight: 500;
   color: white;
   cursor: pointer;
+  text-align: center;
   text-decoration: none;
   // comeback here is this right??
   &:hover 
@@ -37,6 +38,7 @@ const ContainerInactive  = styled.a`
   font-weight: 500;
   color: white;
   cursor: pointer;
+  text-align: center;
   text-decoration: none;
   // comeback here is this right??
   &:hover
