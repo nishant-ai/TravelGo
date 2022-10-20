@@ -125,7 +125,7 @@ const MenuIcon = styled(MdMenu)`
    
       color:white
 
-`
+`;
 const CrossIcon = styled(ImCross)`
   cursor: pointer;
   color: white;
@@ -146,8 +146,7 @@ const Left = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-`
+`;
 
 
 const Logo = styled.img`
@@ -187,5 +186,8 @@ const Login = styled.a`
     background-color: white;
     color: #00a651;
     transition: 0.3s;
+  }
+  @media (max-width: 480px) {
+    margin: 0 2vw;
   }
 `;

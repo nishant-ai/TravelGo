@@ -61,41 +61,15 @@ span {
 
 /* Media Queries For Mobile  Devices < 480px */
 @media (max-width: 480px) {
-    .cont-carousel {
-        /* padding: 32px; */
-        /* width: 100%; */
-    }
-    .title{
-        /* width: 100%; */
-    }
-    .carousel{
-        /* width: 100%; */
-    }
-    
     .backgorund{
         width: 100%;
     }
     .carousel-caption {
-        right: 0;
-        left: 0;
-        padding: 0;
-
+        left: 0!important;
+        padding: 32px;
     }
     .content{
         padding: 0 15px;
         width: 100%;
     }
-    
-    .avatar{
-        /* width: 100%; */
-    }
-    
-    span {
-        /* width: 100%; */
-    }
-    
-    .DecorationR {
-        /* width: 100%; */
-    }
-    
     }
