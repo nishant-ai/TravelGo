@@ -7,7 +7,7 @@ import Cover from './Cover';
 import Destinations from './Destinations';
 import Navbar from './Navbar/Navbar';
 import Packages from './Packages';
-// import Reviews from './Reviews';
+import Reviews from './Reviews';
 import Service from './Service';
 import ServiceStats from './ServiceStats';
 import Subscription from './Subscription';
@@ -23,7 +23,7 @@ function Component() {
       <Destinations />
       <Packages />
       <BookingSteps />
-      {/* <Reviews /> */}
+      <Reviews />
       <Subscription />
       <Footer />
     </div>
