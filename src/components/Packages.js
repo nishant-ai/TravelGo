@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import PackageCard from './PackageCard'
-import PackageSelect from './PackageSelect'
+import React from "react";
+import styled from "styled-components";
+import PackageCard from "./PackageCard";
+import PackageSelect from "./PackageSelect";
 
 function Packages() {
   return (
@@ -27,7 +27,7 @@ function Packages() {
             <PackageCard
                 location='Japan'
                 cost='$800 / Person'
-                tagline='Enjoy the Shrines and blossoms here in this beautiful country'
+                tagline='Enjoy the Shrimes and blossoms here in this beautiful country'
                 stay='3 Days, 2 Nights'
                 image='japan.png'
             />
@@ -42,10 +42,10 @@ function Packages() {
         <Discover href='/'>Discover More</Discover>
 
     </Container>
-  )
+  );
 }
 
-export default Packages
+export default Packages;
 
 const Container = styled.div`
     height: fit-content;
@@ -59,15 +59,6 @@ const Container = styled.div`
     @media (min-width: 768px) {
         height: 100vh;
     }
-    @media (max-width: 480px) {
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        // overflow: hidden;
-    }
-
 `
 
 const Title = styled.div`
@@ -76,10 +67,6 @@ const Title = styled.div`
     width: 100%;
     text-align: center;
     margin-top: 1vh;
-    @media (max-width: 480px) {
-        margin: 0;
-        padding: 32px 0 32px 0;
-    }
 `
 
 const Package = styled.div`
@@ -119,7 +106,7 @@ const PackageCards = styled.div`
 
 const Discover = styled.a`
   margin-top: 4vh;
-  background-color: #00A651;
+  background-color: #00a651;
   padding: 15px 20px;
   border-radius: 7px;
   font-size: 2.5vh;
@@ -128,8 +115,7 @@ const Discover = styled.a`
   cursor: pointer;
   margin-bottom: 5vh;
   text-decoration: none;
-  &:hover
-  {
+  &:hover {
     color: white;
   }
-`
+`;
