@@ -1,30 +1,27 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import { rgba } from "polished";
+import React from 'react';
+import styled, { css } from 'styled-components'
 import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonNext,
-  ButtonBack,
+    CarouselProvider,
+    Slider,
+    Slide,
+    ButtonNext,
+    ButtonBack
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 // import Carousel from 'react-bootstrap/Carousel';
 // import '../styles/review.css';
 
-// i see that either here or the second position works for the image render, which is optimal though??
-const slides = [
-  "http: //www.gpdesigns.net/bikes/img/gpdesigns5_1000x500.jpg",
-  "https://www.teahub.io/photos/full/17-170547_chicago-city-skyline-at-night.jpg",
-  "https://www.sunshinecoastair.com/wp-content/uploads/2018/11/PhaLake4-1000x500.jpg",
-];
+// const slides = [
+//     "https://picsum.photos/200/300/?blur",
+//     "https://picsum.photos/200/300?grayscale",
+//     "https://picsum.photos/seed/picsum/200/300"
+// ]
 function Reviews() {
-      
-  // const slides = [
-  //   "http: //www.gpdesigns.net/bikes/img/gpdesigns5_1000x500.jpg",
-  //   "https://www.teahub.io/photos/full/17-170547_chicago-city-skyline-at-night.jpg",
-  //   "https://www.sunshinecoastair.com/wp-content/uploads/2018/11/PhaLake4-1000x500.jpg",
-  // ];
+    const slides = [
+        "https://picsum.photos/200/300/?blur",
+        "https://picsum.photos/200/300?grayscale",
+        "https://picsum.photos/seed/picsum/200/300"
+    ]
   return (
 
     // < styled component carousel
@@ -50,7 +47,6 @@ function Reviews() {
           </Nav>
         </CarouselProvider>
       </SliderWrapper>
-      <ExampleParagraph>some text to confirm if i can even render punani to the screen</ExampleParagraph>
     </PageContainer>
     // styled component carousel />
     
@@ -135,7 +131,6 @@ const ExampleParagraph = styled.div `
     display: flex;
     align-items: center;
     justify-content: center;
-    background: ${rgba("#1a132b", 0.5)};
     color: white;
     border: 0;
     font-size: 40px;
@@ -145,7 +140,7 @@ const ExampleParagraph = styled.div `
       opacity: 0;
     }
   `; 
-  
+     // background: ${rgba("#1a132b", 0.5)};
   const NextButton = styled(ButtonNext)`
     ${sharedStyles};
   `;
