@@ -58,3 +58,25 @@ span {
     right: -90vw;
     top: -30vw;
 }
+
+/* Media Queries For Mobile  Devices < 480px */
+@media (max-width: 480px) {
+    .backgorund{
+        width: 100%;
+    }
+    .carousel-caption {
+        left: 0!important;
+        padding: 32px;
+    }
+    .content{
+        padding: 0 16px;
+        width: 100%;
+    }
+    .avatar{
+        height: 80px;
+        width: 80px;
+        position: relative;
+        bottom: 0;
+       
+    }
+    }

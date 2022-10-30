@@ -25,6 +25,10 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    media (max-width: 480px) {
+      margin-top: 100px; 
+    }
+   
     background: #333;
 `
 
@@ -38,18 +42,31 @@ const SubscriptionForm = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    @media (max-width: 480px) {
+      width: 90%;
+      height: 50%;
+      justify-content: center;
+    }
 `
 
 const Decor = styled.img`
     height: 15vh;
     margin-top: 30vh;
     margin-left: 61vw;
+    @media (max-width: 480px) {
+      margin-bottom: -100px; 
+    }
+    
 `
 
 const TopDecor = styled.img`
     position: absolute;
     height: 6vh;
     right: 18.5vw;
+    @media (max-width: 480px) {
+      margin-top: -110px; 
+      right: 1.5vw;
+    }
 `
 
 const Title = styled.div`
@@ -57,9 +74,19 @@ const Title = styled.div`
     width: 39vw;
     color: #5E6282;
     font-weight: 600;
+    @media (max-width: 480px) {
+      padding: 0 16px;
+      width: 100%;
+      text-align: center;
+      padding: 16px;
+    }
 `
 
 const Form = styled.div`
+@media (max-width: 480px) {
+  display: grid; 
+  width: 70vw;
+}
 `
 
 const Field = styled.input`
@@ -70,6 +97,11 @@ const Field = styled.input`
   font-weight: 400;
   font-size: 13px;
   width: 20vw;
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
 `
 
 const Button = styled.a`
@@ -81,6 +113,12 @@ const Button = styled.a`
   font-weight: 500;
   color: white;
   cursor: pointer;
+  @media (max-width: 480px) {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 10px;
+  }
   &:hover{
     color:white;
     

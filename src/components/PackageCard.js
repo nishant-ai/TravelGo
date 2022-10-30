@@ -4,6 +4,7 @@ import styled from 'styled-components'
 function PackageCard({image, stay, cost, tagline, location}) {
   return (
     <Container>
+        <Background src={require(`../assets/${image}`)} />
         <Lower>
             <Top>
                 <Stay>{stay}</Stay>
@@ -15,7 +16,7 @@ function PackageCard({image, stay, cost, tagline, location}) {
                 <More>Know More</More>
             </Bottom>
         </Lower>
-        <Background src={require(`../assets/${image}`)} />
+        
     </Container>
   )
 }
@@ -37,8 +38,15 @@ const Container = styled.div`
     }
     @media (min-width: 768px) {
         width: auto;
-        flex-direction: column;
+        flex-direction: column; 
         width: fit-content;
+    }
+    @media (max-width: 480px) {
+        width: 100%;
+        // height: 100%;
+        display: grid;
+        // grid-template-columns: 1fr 1fr;
+        margin: 10px 0;
     }
 `
 
@@ -50,6 +58,13 @@ const Background = styled.img`
         object-fit: contain;
         border-radius: 0;
         border-radius: 0 0 9px 9px;
+    }
+    @media (max-width: 480px) {
+        // object-fit: cover;
+        width: 100%;
+        border-radius: 9px 9px 0 0;
+        height: 20vh;
+        // display: grid;
     }
 `
 
@@ -67,6 +82,9 @@ const Lower = styled.div`
         left: auto;
         width: 25vw;
     }
+    @media (max-width: 480px) {
+           left: 0;
+        }
 `
 
 const Top = styled.div`

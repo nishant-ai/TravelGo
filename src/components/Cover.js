@@ -15,7 +15,7 @@ function Cover() {
     </Container>
   )
 }
-
+ 
 export default Cover
 
 const Container = styled.div`
@@ -69,6 +69,9 @@ const CoverText = styled.div`
 const CoverTextu = styled.div` // cover text upper
   color: white;
   padding-top: 5vh;
+  @media (max-width: 480px) {
+    padding-top: 2vh;
+  }
 `
 
 const CoverButton = styled.a`
@@ -84,9 +87,13 @@ display:inline-block;
      cursor:pointer;
       background:#04A551;
        color:white;
-       text-decoration:none;
        :hover
        { box-shadow:-300px 0 0 0 rgb(120,178,167) inset;
       }
+      @media (max-width: 480px) {
+        padding: 10px 60px;
+        margin-top: 3vh;
+      }
+      
 `
 
