@@ -8,7 +8,7 @@ const SignIn = () => {
             <Container>
                 <InnerContainer>
                     <LoginContainer>
-                        <Heading>Welcome back to <TitleName>TravelGo</TitleName></Heading>
+                        <Heading>Welcome back to <TitleName>WhereToGo</TitleName></Heading>
                         <EmailInput placeholder='Enter your email'/>
                         <PasswordInput placeholder='Enter your password'/>
                         <LoginButton>LOGIN</LoginButton>
