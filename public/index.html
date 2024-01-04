@@ -1,98 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <link rel="stylesheet" href="style.css" />
-    <title>WhereToGo</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <body>
-    <noscript></noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+    
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" >
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <!-- <div class="container">
-      <div class="card">
-        <div class="face face1">
-          <div class="content">
-            <img src="img/1.jp" alt="" />
-            <h3>Design</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Molestias, sequi.
-            </p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="face face1">
-          <div class="content">
-            <img src="img/1.jp" alt="" />
-            <h3>Design</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Molestias, sequi.
-            </p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="face face1">
-          <div class="content">
-            <img src="img/1.jp" alt="" />
-            <h3>Design</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Molestias, sequi.
-            </p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  </body>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Don't have an account? <a
+                href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
 </html>
