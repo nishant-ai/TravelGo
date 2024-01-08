@@ -1,27 +1,264 @@
-import React from 'react'
-import styled from 'styled-components'
+//import styled from 'styled-components'
+// import "./styles.css"
+/*
+import React, { useState } from 'react';
+import axios from 'axios';
+import '../styles/pics.css';
+
+const GooglePlacesSearch = () => {
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState([]);
+
+  const handleInputChange = (event) => {
+    setQuery(event.target.value);
+  };
+
+  const handleSearch = async () => {
+    try {
+      const apiKey = 'AIzaSyC8b6pWwiE-bUcv9JX-09a9lO0g4hXGrNg';
+      const apiUrl = `http://localhost:3000/places?query=${encodeURIComponent(query)}&key=${apiKey}`;
+  
+      const response = await axios.get(apiUrl);
+  
+      const placesWithPhotos = await Promise.all(
+        response.data.results.map(async (place) => {
+          if (place.photos && place.photos.length > 0) {
+            const photoReference = place.photos[0].photo_reference;
+            const photoUrl = `http://localhost:3000/photo?maxwidth=400&photo_reference=${photoReference}&key=${apiKey}`;
+  
+            const photoResponse = await axios.get(photoUrl);
+            return {
+              ...place,
+              photoUrl: photoResponse.data.url,
+            };
+          } else {
+            return place; // If no photos, return the place as is
+          }
+        })
+      );
+  
+      setResults(placesWithPhotos);
+    } catch (error) {
+      console.error('Error fetching data from Google Places API:', error);
+    }
+  };
+  
+
+  return (
+    <div>
+      <input
+        type="text"
+        placeholder="Enter a location"
+        value={query}
+        onChange={handleInputChange}
+      />
+      <button onClick={handleSearch}>Search</button>
+
+      <ul>
+        {results.map((place) => (
+          <li key={place.place_id}>{place.name} {place.rating} 
+            {typeof place.photoUrl === 'string' && (
+                <img
+                  src={place.photoUrl}
+                  alt={place.name}
+                  className="small-photo" // Apply a CSS class for styling
+                />
+              )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default GooglePlacesSearch; */
+
+
+import React, { useState } from 'react';
+import axios from 'axios';
+import '../styles/pics.css';
+
+const GooglePlacesSearch = () => {
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState([]);
+
+  const handleInputChange = (event) => {
+    setQuery(event.target.value);
+  };
+
+  const handleSearch = async () => {
+    try {
+      // Replace 'YOUR_API_KEY' with your actual Google Places API key
+      const apiKey = 'AIzaSyC8b6pWwiE-bUcv9JX-09a9lO0g4hXGrNg';
+      const apiUrl = 'http://localhost:3000/places?query=' + encodeURIComponent(query) + '&key=' + apiKey;
+
+
+      const response = await axios.get(apiUrl);
+
+      // Assuming response.data.results contains the array of places
+      setResults(response.data.results);
+    } catch (error) {
+      console.error('Error fetching data from Google Places API:', error);
+    }
+  };
+
+  return (
+    <div>
+      <input
+        type="text"
+        placeholder="Enter a location"
+        value={query}
+        onChange={handleInputChange}
+      />
+      <button onClick={handleSearch}>Search</button>
+
+      <ul>
+        {results.map((place) => (
+          <li key={place.place_id}>{place.name} {place.rating} 
+            {typeof place.photoUrl === 'string' && (
+                <img
+                  src={place.photoUrl}
+                  alt={place.name}
+                  className="small-photo" // Apply a CSS class for styling
+                />
+              )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}; 
+
+export default GooglePlacesSearch; 
+
+
+/*import React, { useEffect } from 'react';
+// Import Axios at the top of your component or file
+import axios from 'axios';
+
+// Your functional component or class component
+
+const fetchPlacesData = async (query, apiKey) => {
+  try {
+    const response = await axios.get(
+      `/api/place/textsearch/json?query=${query}&key=${apiKey}`,
+      {
+        headers: {
+          'Content-Type': 'application/json', // Add any necessary headers
+          // Add other headers as needed
+        },
+      }
+    );
+
+    console.log(response.data.results);
+    return response.data.results;
+  } catch (error) {
+    console.error('Error fetching places data:', error);
+    throw error;
+  }
+};
+
+
+
+const YourComponent = () => {
+  useEffect(() => {
+    const apiKey = 'AIzaSyC8b6pWwiE-bUcv9JX-09a9lO0g4hXGrNg';
+    const query = 'restaurants in sydney';
+
+    // Call the function to fetch data
+    fetchPlacesData(apiKey, query);
+  }, []);
+
+  return (
+    <div>
+      <h1>Hello, this is YourComponent!</h1>
+      {/* Add more JSX elements and components as needed}
+    </div>
+  );
+};
+
+export default YourComponent;*/
+
+
+/*useEffect ( () => {
+  
+  let data = JSON.stringify({"textQuery": "schools in canada"})
+  console.log(data)
+
+	const configs = {
+		method: 'post',
+		url: `https://maps.googleapis.com/maps/api/place/textsearch/json?`
+		headers: {
+				'Content-Type': 'application/json',
+				'X-Goog-Api-Key':…, …
+				},
+			data: data
+  } 
+
+	const response = axios.get(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=${data}key=AIzaSyC8b6pWwiE-bUcv9JX-09a9lO0g4hXGrNg`)
+	console.log(response.data.places[0].displayName.text) 
+  setText(response.data.places[0].displayName.text) 
+
+} catch (error) {
+	console.error('error: ', error)
+}
+)
+*/
+/*
 function Cover() {
   return (
     <Container id='home'>
       <CoverImg src={require('../assets/cover.png')} alt="cover" />
       <CoverBody>
-        <CoverTitle>Your Imagination Is</CoverTitle>
-        <CoverTitle>Your Only Limit</CoverTitle>
-        <CoverTextu>We always try to make our customer happy. We provide all kind of facilities.</CoverTextu>
-        <CoverText>Your satisfaction is our main priority</CoverText>
-        <CoverButton href='/'>Discover More</CoverButton>
+        <CoverTitle>Where do you want to go?</CoverTitle>
+        <CityInput placeholder='Enter your place'/>
+        <ActivityInput placeholder='Enter your desired activity'/>
+        <SearchButton href='/'>Search </SearchButton>
       </CoverBody>
       <BottomFade />
     </Container>
   )
 }
+
+
+console.log(ActivityInput)
  
 export default Cover
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  
+
+`
+
+const CityInput = styled.input`
+    background-color: white;
+    border:none;
+    outline:none;
+    width:70 px;
+    padding:10px;
+    border-radius:8px;
+    &:focus{
+        box-shadow:1px 1px 8px #00000044;
+    }
+    &::placeholder{
+        color:#000
+    }
+`
+const ActivityInput = styled.input`
+    background-color:white;
+    border:none;
+    outline:none;
+    width:250px;
+    padding:10px;
+    border-radius:8px;
+    &:focus{
+        box-shadow:1px 1px 10px #00000030;
+    }
+    &::placeholder{
+        color:#000
+    }
+
 `
 
 const CoverImg = styled.img`
@@ -74,7 +311,7 @@ const CoverTextu = styled.div` // cover text upper
   }
 `
 
-const CoverButton = styled.a`
+const SearchButton = styled.a`
 
 cursor:pointer;
 clear:both; 
@@ -96,4 +333,4 @@ display:inline-block;
       }
       
 `
-
+*/
