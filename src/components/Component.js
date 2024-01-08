@@ -16,16 +16,7 @@ import Footer from './Footer';
 function Component() {
   return (
     <div className="App">
-      <Navbar />
       <Cover />
-      <Service />
-      <ServiceStats />
-      <Destinations />
-      <Packages />
-      <BookingSteps />
-      <Reviews />
-      <Subscription />
-      <Footer />
     </div>
   );
 }
