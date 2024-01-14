@@ -8,10 +8,13 @@ The website's main feature is a generative AI-powered search bar that uses the p
 
 ## How to Use: 
 To access the search bar, click on "Start Saerching".
-
+![homepage](homepage.jpg)
 
 To use the search bar, users should key in their preferred holiday destination and activities, and a compilation of cities and countries associated with those interests will be generated for you.
+![searchbar](searchbar.jpg)
 
+Users can access the login page via the top right hand button on the main page to login to their account. 
+![login](login.jpg)
 
 ### Tech Stack:
 
