@@ -5,9 +5,9 @@ function Cover() {
     <Container id='home'>
       <CoverImg src={require('../assets/cover.png')} alt="cover" />
       <CoverBody>
-        <CoverTitle>Your Imagination Is</CoverTitle>
-        <CoverTitle>Your Only Limit</CoverTitle>
-        <CoverTextu>We always try to make our customer happy. We provide all kind of facilities.</CoverTextu>
+        <CoverTitle>Find your ideal</CoverTitle>
+        <CoverTitle>travel destination now</CoverTitle>
+        <CoverTextu>Use our AI-powered search engine to find your next holiday spot.</CoverTextu>
         <CoverText>Your satisfaction is our main priority</CoverText>
         <CoverButton href='/'>Discover More</CoverButton>
       </CoverBody>

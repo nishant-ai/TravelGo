@@ -5,23 +5,23 @@ import Step from './Step'
 function BookingSteps() {
   return (
     <Container style={{background: '#333'}}>
-        <Title>Book Your Next Trip in 3 Easy Steps</Title>
-        <TitleMini>Easy and Fast</TitleMini>
+        <Title>Plan your dream trip in 3 Easy Steps</Title>
+        <TitleMini>Let our AI-powered search engine do the job.</TitleMini>
         <Body>
             <Left>
                 <Step 
-                title='Choose Destination'
-                text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.'
+                title='Choose your ideal holiday features'
+                text='Select your preferred type of activities, budget, travel time and weather.'
                 image='step1.png'
                 />
                 <Step 
-                title='Make Payment'
-                text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.'
+                title='Let our search engine do the work'
+                text='Our generative AI-powered search engine will provide a list of suggested destinations and activities that suit your preference.'
                 image='step2.png'
                 />
                 <Step 
-                title='Reach Airport on Selected Date'
-                text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.'
+                title='Start planning and packing'
+                text='Select your favourite destinations and activites and head on that dream trip!'
                 image='step3.png'
                 />
             </Left>
@@ -43,7 +43,7 @@ const Container = styled.div`
         display: grid;
         width: 100%;
         height: 100%;
-        padding: 30px 16px;
+        padding: 20px 16px;
         }
 `
 
